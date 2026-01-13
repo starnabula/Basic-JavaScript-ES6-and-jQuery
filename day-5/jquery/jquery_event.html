@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 1px solid green;
+            background-color: beige;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <button>Click me</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sit. Aliquam quo asperiores quam? Illum, eius iure ex aperiam molestias incidunt nostrum soluta, fugit, expedita corrupti libero repudiandae sunt impedit</p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+       $(function() {
+        $("button").click(function() {
+            //alert("Yahhhhhh")
+           // $("p").hide(3000)
+           // $("p").show(3000)
+           // $("p").fadeIn(3000)
+           //$("p").fadeOut(1000)
+          // $("p").fadeOut(1000)
+          // $("p").fadeIn(1000)
+          // $("p").fadeToggle(1000)
+         //  $("p").sliceUp()
+        //   $("p").sliceDown()
+        $("p").slideToggle(1000)
+
+        })
+
+     })
+    </script>
+</body>
+</html>

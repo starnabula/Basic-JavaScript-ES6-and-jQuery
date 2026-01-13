@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic Jquery</title>
+
+    <style>
+        .setbg {
+            background-color: aqua;
+            color: brown;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <h1>Basic JQ</h1>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto impedit sequi iste tempora, unde voluptatem provident omnis. Distinctio, animi repellendus ex culpa quis esse unde optio! Laboriosam, sit velit!</p>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus totam labore ipsa eveniet, delectus libero eius, repellendus commodi repudiandae tempore, dolorum earum ducimus quod accusantium quas sunt recusandae illo placeat.</p>
+    <span name="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cum rem mollitia nulla nostrum quos! Consectetur, nisi tempore explicabo laudantium nihil quam dolor minus exercitationem consequatur non, asperiores quasi nesciunt.</span>
+    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maxime? Cupiditate velit temporibus quisquam labore hic. Numquam, eveniet animi. Quasi nisi obcaecati laborum doloremque illum ea placeat aliquam itaque harum?</article>
+    
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+
+
+        $(function() {
+          
+            //  alert("ok")
+            $("h1").css("color", "red");
+            $("#p1").css("background-color", "yellow");
+            $(".p2").css("background-color", "pink");
+            $("span").css("background-color", " green");
+            $("article").addClass("setbg");
+            $("article").removeClass("setbg");
+            $("article").toggleClass("setbg");
+
+
+
+        })
+
+
+
+    </script>
+</body>
+</html>

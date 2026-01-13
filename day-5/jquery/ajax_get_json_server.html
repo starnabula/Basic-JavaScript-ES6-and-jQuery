@@ -1,0 +1,225 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Product data</h1>
+        <p class="lead">product data </p>
+    </div>
+</div>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>Barcode</th>
+                <th>Qry</th>
+                <th>Price</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+       เนื่องจากข้อมูลจำนวน 200 แถว นั้นยาวมาก (ประมาณ 1,400 บรรทัด) ซึ่งจะทำให้ข้อความถูกตัดและก็อปปี้ไปใช้ยาก ผมจึงเตรียมให้ 2 ส่วน ครับ:
+
+ตัวอย่าง 20 แถวแรก (ก็อปปี้ไปวางได้เลย)
+
+วิธีสร้าง 200 แถวในพริบตา (สำหรับแปะในโปรเจกต์ Next.js หรือ ASP.NET ของคุณ)
+
+1. ตัวอย่างข้อมูล (20 แถวแรก)
+HTML
+
+<tr>
+    <td>1</td>
+    <td>Samsung</td>
+    <td>778978877873624</td>
+    <td>20</td>
+    <td>20000</td>
+    <td>20/10/2024</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Apple</td>
+    <td>889541236547890</td>
+    <td>15</td>
+    <td>35900</td>
+    <td>21/10/2024</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Oppo</td>
+    <td>123456789012345</td>
+    <td>50</td>
+    <td>8990</td>
+    <td>22/10/2024</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>Vivo</td>
+    <td>987654321098765</td>
+    <td>30</td>
+    <td>7500</td>
+    <td>23/10/2024</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>Xiaomi</td>
+    <td>456789012345678</td>
+    <td>100</td>
+    <td>5990</td>
+    <td>24/10/2024</td>
+</tr>
+<tr>
+    <td>6</td>
+    <td>Sony</td>
+    <td>321654987012345</td>
+    <td>10</td>
+    <td>29990</td>
+    <td>25/10/2024</td>
+</tr>
+<tr>
+    <td>7</td>
+    <td>Realme</td>
+    <td>741852963014785</td>
+    <td>40</td>
+    <td>6500</td>
+    <td>26/10/2024</td>
+</tr>
+<tr>
+    <td>8</td>
+    <td>OnePlus</td>
+    <td>852963741025896</td>
+    <td>12</td>
+    <td>18900</td>
+    <td>27/10/2024</td>
+</tr>
+<tr>
+    <td>9</td>
+    <td>Asus</td>
+    <td>963852741036985</td>
+    <td>8</td>
+    <td>25000</td>
+    <td>28/10/2024</td>
+</tr>
+<tr>
+    <td>10</td>
+    <td>Huawei</td>
+    <td>159357258456123</td>
+    <td>25</td>
+    <td>15000</td>
+    <td>29/10/2024</td>
+</tr>
+<tr>
+    <td>11</td>
+    <td>Samsung</td>
+    <td>778978877873625</td>
+    <td>18</td>
+    <td>21000</td>
+    <td>30/10/2024</td>
+</tr>
+<tr>
+    <td>12</td>
+    <td>Infinix</td>
+    <td>357159258456789</td>
+    <td>60</td>
+    <td>4500</td>
+    <td>31/10/2024</td>
+</tr>
+<tr>
+    <td>13</td>
+    <td>Nokia</td>
+    <td>753951852456123</td>
+    <td>5</td>
+    <td>3500</td>
+    <td>01/11/2024</td>
+</tr>
+<tr>
+    <td>14</td>
+    <td>Google</td>
+    <td>951753852654321</td>
+    <td>20</td>
+    <td>18500</td>
+    <td>02/11/2024</td>
+</tr>
+<tr>
+    <td>15</td>
+    <td>Honor</td>
+    <td>147258369147258</td>
+    <td>35</td>
+    <td>9900</td>
+    <td>03/11/2024</td>
+</tr>
+<tr>
+    <td>16</td>
+    <td>Motorola</td>
+    <td>258369147369258</td>
+    <td>15</td>
+    <td>11000</td>
+    <td>04/11/2024</td>
+</tr>
+<tr>
+    <td>17</td>
+    <td>ZTE</td>
+    <td>369147258147369</td>
+    <td>50</td>
+    <td>5000</td>
+    <td>05/11/2024</td>
+</tr>
+<tr>
+    <td>18</td>
+    <td>Lenovo</td>
+    <td>123123123123123</td>
+    <td>22</td>
+    <td>8000</td>
+    <td>06/11/2024</td>
+</tr>
+<tr>
+    <td>19</td>
+    <td>Tecno</td>
+    <td>456456456456456</td>
+    <td>45</td>
+    <td>3900</td>
+    <td>07/11/2024</td>
+</tr>
+<tr>
+    <td>20</td>
+    <td>Nothing</td>
+    <td>789789789789789</td>
+    <td>10</td>
+    <td>16900</td>
+    <td>08/11/2024</td>
+</tr>
+        </tbody>
+    </table>
+</div>
+    
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        //ไม่มี url ครับ
+       /* $(function() {
+            $.getJSON("...", function (result) {
+              
+                $.each(result, function (i, time) {
+                    trHTML += `<tr>
+                        <td>${time.id}</td>
+                        <td>${time.name}</td>
+                        <td>${time.barcode}</td>
+                        <td>${time.qty}</td>
+                        <td>${time.price}</td>
+                        <td>${time.date}</td>
+                    </tr>`;
+                });
+                $("tbody").html(trHTML);
+            });
+        });*/
+    </script>
+</body>
+</html>
